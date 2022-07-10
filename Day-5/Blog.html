@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogger </title>
+    <link rel="shortcut icon" href="blogger.png" type="image/x-icon">
+    <link rel="stylesheet" href="Blog.css">
+</head>
+
+<!-- <body onload="preLoader()"> -->
+<body>
+    <!-- preLoader Start -->
+    <!-- <div id="loader"></div> -->
+
+    <!-- Main Navbar Start -->
+    <nav class="navbar">
+        <ul class="main-ul">
+            <li><a href="">PARTNERS</a></li>
+            <li><a href="">PRESS</a></li>
+            <li><a href="about">ABOUT</a></li>
+            <li><a href="">USEFUL</a></li>
+        </ul>
+        <ul class="font-icon">
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-linkedin"></i></li>
+        </ul>
+    </nav>
+
+    <!-- Container Navbar Start -->
+    <div class="container" id="blur">
+        <nav class="navbar bgColor">
+            <div class="logo"><span id="bigB">B</span>logger</div>
+            <ul id="nav-ul">
+                <li><a href="home">Home</a></li>
+                <li><a href="blog">Blog</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="about">About</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <!-- Home Section Start -->
+        <Section id="home">
+            <h1 class="typing"></h1>
+        </Section>
+        <hr>
+
+        <!-- Blog Section Start -->
+        <Section id="blog">
+            <div class="heading">
+                <h1>Blog</h1>
+                <button id="createBtn" onclick="toggle()">Create Blog</button>
+            </div>
+            <div class="blogContainer"></div>
+        </Section>
+        <hr>
+
+        <!-- Contact Us Section Start -->
+        <Section id="contact">
+            <h1 class="headings">Contact Form</h1>
+            <div class="contact-form">
+                <input type="text" id="name" class="form-style" value="" placeholder="Enter your name here">
+                <input type="email" id="email" class="form-style" value="" placeholder="Enter your enail">
+                <input type="text" id="suggestion" class="form-style"
+                    placeholder="Enter Your suggestion or query here!!!">
+                <button class="btn">Submit</button>
+            </div>
+        </Section>
+    </div>
+
+    <!-- Footer Section Start -->
+    <footer>
+        <div id="footer">
+        <div class="row">
+            <ul class="footer-icon">
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-linkedin"></i></li>
+            </ul>
+            <p>Info Blogger Pvt. Ltd.</p>
+            <p>Terms of Use : Privacy Policy</p>
+            <p><i class="fa-solid fa-copyright"></i>   All right reserved</p>
+        </div>
+    </div>
+    </footer>
+
+    <!-- Blog PopUp -->
+    <div class="Display">
+        <div><i class="fa-solid fa-xmark " onclick="toggle()"></i></div>
+        <div class="blog">
+            <input type="text" class="topic" placeholder="Topic" value="">
+            <textarea type="text" class="discription" placeholder="Discription" value=""></textarea>
+            <button class="done">Done</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/dbbeb00af4.js" crossorigin="anonymous"></script>
+    <script src="Blog.js"></script>
+</body>
+
+</html>
