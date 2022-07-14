@@ -1,0 +1,29 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+    background-color:rgb(172, 172, 217);
+}
+img{
+    width:200px;
+    height:200px;
+    padding:0px;
+    background: none;
+    position:absolute;
+    top:200px;
+
+}
+
+#img-1{
+    position:absolute;
+    left:-120px;
+}
+#img-2{
+    position:absolute;
+    left:380px;
+    z-index:2;
+}
+#img-3{
+    position:absolute;
+    left:880px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="animate.css">
+    <title>Animation</title>
+</head>
+
+<body>
+    <img src="ball-2.png" alt="basketball-1" id="img-1" srcset="">
+    <img src="ball-2.png" alt="basketball-1" id="img-2" srcset="">
+    <img src="ball-2.png" alt="basketball-1" id="img-3" srcset="">
+
+
+
+    <script>
+
+        const img1 = document.getElementById("img-1");
+        const img2 = document.getElementById("img-2");
+        const img3 = document.getElementById("img-3");
+
+        const Spinning = [
+            { transform: 'rotate(0deg) translateX(0px)' },
+            { transform: 'rotate(360deg) translateX(360px)' }
+        ];
+
+        const Timing = {
+            duration: 1000,
+            iterations: 1,
+            easing: "linear",
+        }
+
+        const rotate = function (img) {
+            const promise = new Promise(function (resolve, reject) {
+                setTimeout(Animation, 1000)
+                function Animation() {
+                    img.animate(Spinning, Timing);
+                    resolve();
+                }
+            });
+
+            return promise;
+        };
+
+
+        async function demoPromise() {
+
+            try {
+                await rotate(img1);
+                await rotate(img2);
+                await rotate(img3);
+
+            } catch (error) {
+                console.log("Error: " + error);
+            }
+            start();
+
+        }
+
+        function start() {
+        setTimeout(demoPromise, 10);
+        }
+
+        start();
+
+    </script>
+
+
+</body>
+
+</html>
