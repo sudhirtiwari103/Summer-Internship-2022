@@ -1,0 +1,20 @@
+*{
+    overflow:hidden;
+}
+#after-nav{
+    display: flex;
+    /* background-color: bisque; /
+    width: 100%;
+}
+#sidebar{
+    border: 2px solid black;
+    height: 90vh;
+    width: 30%;
+    / background-color: aqua; */
+    margin-left: 5px;
+    border-radius: 10px;
+}
+#lists{
+    width: 70%;
+    height: 60vh;
+}

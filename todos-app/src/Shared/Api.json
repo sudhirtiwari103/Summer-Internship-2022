@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "fname": "sudhir",
+      "lname": "tiwari",
+      "username": "sudhirtiwari103",
+      "email": "sudhir@gmail.com",
+      "password": "******",
+      "todos": [{
+        "todoId": 1,
+        "title": "Assignment",
+        "discription": "Physics Assignment"
+      },
+    {
+      "todoId": 2,
+      "title": "PTM",
+      "discription": "At 9'o clock"
+    }],
+      "sharedUser": []
+    },
+    {
+      "id": 2,
+      "fname": "ayush",
+      "lname": "gaur",
+      "username": "ayushgaur",
+      "email": "ayush@gmail.com",
+      "password": "******",
+      "todos": [{
+        "todoId": 1,
+        "title": "Meeting",
+        "discription": "On Yoga Day"
+      },
+    {
+      "todoId": 2,
+      "title": "PTM",
+      "discription": "Cancelled"
+    }],
+      "sharedUser": []
+    },
+
+    {
+      "id": 3,
+      "fname": "himanshu",
+      "lname": "patni",
+      "username": "himanshuPatni",
+      "email": "himanshu@gmail.com",
+      "password": "******",
+      "todos": [],
+      "sharedUser": []
+    }
+  ]
+
+ 

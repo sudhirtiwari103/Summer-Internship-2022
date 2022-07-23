@@ -1,0 +1,13 @@
+#main-container{
+    width: 75%;
+    
+}
+#list{
+    width: auto;
+    text-align: center;
+    padding:10px;
+    font-size: 3rem;
+    background-color: rgb(245, 196, 196);
+}
+
+
